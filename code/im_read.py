@@ -46,9 +46,8 @@ def create_image(data, numrow, numcol,name):
 
 
 def im_read(filename):
-    full_filename=filename+".pgm"
     try:
-        f.open(full_filename,"r")
+        f.open(filename,"r")
         data=f.read()
         f.close()
     except:
